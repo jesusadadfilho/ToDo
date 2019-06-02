@@ -1,0 +1,16 @@
+<h2>Tarefas existentes</h2>
+
+<ul class="tarefas">
+    <li *ngFor= "let tarefa of tarefas" 
+    (click)="onSelected(tarefa)" 
+    [class.selected] = "tarefa === selectTarefa"
+    >
+    <a routerLink="/detail/{{tarefa.descricao}}">
+            <span class="badge">
+            {{tarefa.descricao}}
+            </span> {{tarefa.responsavel}}
+    </a>
+    </li>
+</ul>
+
+

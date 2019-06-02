@@ -1,0 +1,9 @@
+<h3>Top Tarefas</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let tarefa of tarefas" class="col-1-4"
+      routerLink="/detail/{{tarefa.descricao}}">
+    <div class="module tarefa">
+      <h4>{{tarefa.descricao}}</h4>
+    </div>
+  </a>
+</div>

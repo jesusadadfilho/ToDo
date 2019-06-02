@@ -1,0 +1,13 @@
+<div *ngIf="tarefa">
+
+  <h2>Descrição: {{tarefa.descricao}}</h2>
+  <div><span>Porcentagem: </span>{{tarefa.porcentagem}}</div>
+  <div>
+    <label>Responsavel:
+      <input [(ngModel)]="tarefa.responsavel" placeholder="Responsavel"/>
+    </label>
+  </div>
+
+  <button (click)="goBack()">go back</button>
+
+</div>
